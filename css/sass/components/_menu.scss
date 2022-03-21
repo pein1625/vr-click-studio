@@ -1,0 +1,230 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $white;
+
+  &-item {
+    position: relative;
+  }
+
+  &-link {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &-toggle {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    &::before {
+      content: "\f105";
+      font-family: "Font Awesome 5 Pro";
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 18px;
+      border-radius: 50%;
+      transition: 0.3s ease-out;
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &-sub {
+    display: none;
+    background-color: rgba(#fff, 0.05);
+
+    .menu-link {
+      padding-left: 35px;
+      position: relative;
+    }
+  }
+
+  &-sub-2 {
+    .menu-link {
+      padding-left: 45px;
+    }
+  }
+
+  &-sub-3 {
+    .menu-link {
+      padding-left: 55px;
+    }
+  }
+
+  &-root > &-item {
+    margin: 8px 0;
+  }
+
+  &-root > &-item > &-link {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &:not(.menu-sub) {
+      border: 0;
+    }
+
+    // menu root
+    &-root {
+      display: flex;
+      border: 0;
+      margin-right: 40px;
+    }
+
+    &-root &-item {
+      border: 0;
+    }
+
+    &-root &-toggle {
+      pointer-events: none;
+    }
+
+    &-root &-sub {
+      min-width: 200px;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 100%;
+      border-radius: 4px;
+      transform-origin: 0 4px;
+      background-color: $white;
+      padding: 4px 0;
+
+      &-right {
+        left: auto;
+        right: calc(100% + 4px);
+        transform-origin: 100% 0;
+
+        &::before {
+          right: auto;
+          left: 100%;
+        }
+      }
+    }
+
+    &-root &-sub &-toggle {
+      width: 30px;
+      height: 30px;
+      border-left: 0;
+    }
+
+    &-root &-sub &-link {
+      padding-left: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    &-root &-sub &-item-group > &-link {
+      padding-right: 30px;
+    }
+
+    &-root &-sub &-item:hover > &-link {
+      background-color: #eee;
+    }
+
+    &-root > &-item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+
+    &-root > &-item > &-link {
+      font-size: 16px;
+      padding: 10px 0;
+      transition: 0.3s;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: $cyan;
+        transition: 0.3s;
+        transform: rotateY(90deg);
+        transform-origin: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &.active {
+        &::after {
+          transform: rotateY(0);
+        }
+      }
+    }
+
+    &-root > &-item:hover > &-link {
+      &::after {
+        transform: rotateY(0);
+      }
+    }
+
+    &-root > &-item > &-toggle {
+      display: none;
+    }
+
+    &-root > &-item-group > &-sub {
+      transform-origin: 0 0;
+      top: 100%;
+      left: 0;
+    }
+
+    &-root > &-item-group:hover > &-sub,
+    &-root > &-item-group &-item-group:hover > &-sub {
+      display: block;
+      animation: menu-float-show 0.2s ease-out;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    &-root {
+      margin-right: 100px;
+    }
+
+    &-root > &-item {
+      &:not(:last-child) {
+        margin-right: 80px;
+      }
+    }
+
+    &-root > &-item > &-link {
+      font-size: 20px;
+    }
+  }
+}

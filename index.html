@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="navbar__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="btn-toggle js-navbar-toggle ms-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <form class="search">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                                    <button class="input-group-text"><i class="fal fa-search"></i></button>
+                                                </div>
+                                            </form>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item menu-item-group"><a class="menu-link active" href="./about.html">Giới thiệu</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./services.html">Dịch vụ</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./solutions.html">Giải pháp thực tế ảo</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Blog</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Đối tác</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="h-language dropdown ms-3">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img src="./images/vn.svg" alt="" /></button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#!"><img src="./images/vn.svg" alt="" />Tiếng Việt</a></li>
+                                        <li><a class="dropdown-item" href="#!"><img src="./images/gb.svg" alt="" />English</a></li>
+                                    </ul>
+                                </div>
+                                <div class="h-account dropdown ms-3">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="fal fa-lg fa-user"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#!"><i class="fal fa-fw fa-address-card me-3"></i>Thông tin cá nhân</a></li>
+                                        <li><a class="dropdown-item" href="#!"><i class="fal fa-fw fa-sign-in me-3"></i>Đăng nhập</a></li>
+                                        <li><a class="dropdown-item" href="#!"><i class="fal fa-fw fa-sign-out me-3"></i>Đăng xuất</a></li>
+                                    </ul>
+                                </div>
+                                <button class="h-search-toggle d-none d-lg-inline-block ms-3" type="button"><i class="fal fa-lg fa-search"></i></button>
+                                <button class="btn-toggle text-white d-xl-none js-navbar-toggle ms-3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <!-- Banner-->
+                <section class="banner"><img class="banner__img" src="./images/banner-img.png" alt="">
+                    <div class="container">
+                        <div class="banner__content">
+                            <div class="banner__title"><span>GIẢI PHÁP<br>VR 360 TOUR</span></div>
+                            <div class="banner__desc">Một sự độc đáo và mới lạ, một trải nghiệm không thể hoàn hảo hơn cho khách hàng của bạn trong các chiến dịch marketing, đã tới lúc bạn phải nghĩ tới một công nghệ mới, giúp bạn kéo khách hàng về phía mình và biến họ thành trung tâm để chăm sóc.</div>
+                            <div class="mt-3 mt-lg-5"><a class="button" href="#!"><span>Xem thêm</span><i class="fal fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Giải pháp-->
+                <section class="s-solution">
+                    <div class="container">
+                        <div class="s-solution__grid">
+                            <div class="s-solution__aside">
+                                <div class="card-slider">
+                                    <div class="card-slider__pagination"></div>
+                                    <div class="card-slider__pagination"></div>
+                                    <div class="card-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-1.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Tour</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-2.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Store</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-3.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Event</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-1.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Tour</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-2.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Store</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="card-1">
+                                                    <div class="card-1__frame"><img src="./images/card-1-3.jpg" alt="" /></div>
+                                                    <div class="card-1__content">
+                                                        <div class="card-1__label">Giải pháp</div>
+                                                        <div class="card-1__name">VR 360 Event</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-solution__main">
+                                <div class="solution-slider">
+                                    <div class="solution-slider__pagination"></div>
+                                    <div class="solution-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-1.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 TOUR</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-2.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 STORE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-3.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 EVENT</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-1.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 TOUR</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-2.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 STORE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="solution"><img class="solution__img" src="./images/solution-slide-3.png" alt="" />
+                                                    <div class="solution__content">
+                                                        <div class="solution__label">Giải pháp</div>
+                                                        <div class="solution__title">VR 360 EVENT</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Các lĩnh vực ứng dụng-->
+                <section class="s-field">
+                    <h2 class="s-title"><span class="fw-300">Các lĩnh vực</span><br><span class="fw-700">Ứng dụng của VR 360</span></h2>
+                    <div class="container">
+                        <div class="s-field__desc">
+                            <p class="text-uppercase"><span class="fw-700" style="color: #01f4d4;">VR CLick studio</span> là một trong những Creative Agency tiên phong trong việc nghiên cứu & triển khai ứng dụng các giải pháp 360 độ, nội dung 3D, thực tế ảo và thực tế ảo tăng cường (AR) trên các thiết bị thông minh, các nền tảng công nghệ phù hợp với mọi chiến lược marketing & bán hàng của các thương hiệu.</p>
+                        </div>
+                        <div class="row g-3 g-lg-4">
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-1.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Giáo dục</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-2.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Y tế</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-3.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Hotel, Resort</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-4.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Khu công nghiệp</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-5.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Bất động sản</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-6.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Bán lẻ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-7.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Triển lãm ảo</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-8.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Showroom 360 ô tô</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-9.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Showroom 360 nội thất</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-10.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Showroom 360<br>đồ gia dụng</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-11.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Showroom 360<br>thiết bị vệ sinh</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6"><a class="card-2" href="#!">
+                                    <div class="card-2__frame"><img src="./images/card-2-12.jpg" alt="" /></div>
+                                    <div class="card-2__title"><span>Showroom 360<br>thời trang</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Khu vực trải nghiệm-->
+                <section class="s-experience">
+                    <div class="container">
+                        <div class="position-relative">
+                            <h2 class="s-experience__title"><span class="fw-300">Khu vực</span> <span class="fw-700">trải nghiệm sản phẩm</span></h2>
+                        </div>
+                    </div>
+                    <div class="s-experience__wrapper"><img class="s-experience__bg" src="./images/experience-bg.jpg" alt="">
+                        <div class="s-experience__body">
+                            <div class="container">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CGQoE63sJWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><a class="s-experience__overlay js-frame-overlay" href="#!"><img src="./images/play-btn.png" alt=""><span>Bấm để trải nghiệm...</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Dự án tiêu biểu-->
+                <section class="s-project">
+                    <div class="container">
+                        <h2 class="s-project__title"><span>Dự án tiêu biểu</span></h2>
+                        <ul class="nav project-tabs">
+                            <li class="nav-item"><a class="nav-link js-project-tab active" href="#project-tab-0" data-bs-toggle="tab">Tất cả</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-1" data-bs-toggle="tab">Du lịch</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-2" data-bs-toggle="tab">Bán lẻ</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-3" data-bs-toggle="tab">Y tế</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-4" data-bs-toggle="tab">Văn phòng</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-5" data-bs-toggle="tab">Sự kiện ảo</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-6" data-bs-toggle="tab">Bất động sản</a></li>
+                            <li class="nav-item"><a class="nav-link js-project-tab" href="#project-tab-7" data-bs-toggle="tab">KCN-Nhà máy</a></li>
+                        </ul>
+                        <div class="s-project__wrapper">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="project-tab-0">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-1">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-2">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-3">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-4">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-5">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-6">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="project-tab-7">
+                                    <div class="project-slider">
+                                        <div class="project-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="project-slider__next"><i class="fal fa-angle-right"></i></div>
+                                        <div class="project-slider__container swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-1.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">NOVAHILLS MŨI NÉ<br />RESORT & VILLAS</div>
+                                                        <div class="project__subtitle">sa bàn ảo</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-2.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">WYNDHAM PHÚ QUỐC</div>
+                                                        <div class="project__subtitle">VR tour</div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="project">
+                                                        <div class="project__frame">
+                                                            <div class="project__rect"><img src="./images/project-3.jpg" alt="" /></div>
+                                                        </div>
+                                                        <div class="project__title">vhs-ecopark</div>
+                                                        <div class="project__subtitle">VR tour 360</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bạn cần thực tế ảo trong chiến lực marketing?-->
+                <section class="s-intro">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between g-30">
+                            <div class="col-xl-auto">
+                                <h2 class="s-intro__title mb-3 mb-lg-4 wow fadeInUp" data-wow-delay="0.1s">BẠN CẦN <span>THỰC TẾ ẢO</span><br />TRONG <span>CHIẾN LƯỢC MARKETING?</span></h2>
+                                <div class="wow fadeInUp" data-wow-delay="0.3s"><a class="s-intro__btn" href="#!"><span class="fw-300">Liên hệ với</span><br /><span class="fw-500">VR Click Studio</span></a></div>
+                            </div>
+                            <div class="col-xl-auto wow fadeInRight" data-wow-delay="0.5s"><img class="s-intro__img" src="./images/intro.png" alt="" /></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Khách hàng tiêu biểu-->
+                <section class="s-customer">
+                    <div class="container">
+                        <div class="position-relative">
+                            <h2 class="s-title"><span class="fw-300">Khách hàng</span><br><span class="fw-700">Tiêu biểu</span></h2>
+                            <div class="s-customer__grid"><a class="s-customer__frame" href="#!"><img src="./images/customer-1.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-2.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-3.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-4.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-5.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-6.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-7.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-8.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-9.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-10.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-11.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-12.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-13.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-14.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-15.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-16.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-17.png" alt=""></a><a class="s-customer__frame" href="#!"><img src="./images/customer-18.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4 py-xl-5"><a class="button" href="#!"><span>Xem thêm</span><i class="fal fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Nhận xét khách hàng-->
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title fw-700"><span class="text-gradient">Nhận xét khách hàng</span></h2>
+                        <div class="feedback-slider">
+                            <div class="feedback-slider__prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="feedback-slider__next"><i class="fal fa-angle-right"></i></div>
+                            <div class="feedback-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="feedback">
+                                            <div class="feedback__avatar"><img src="./images/avatar.jpg" alt="" /></div>
+                                            <div class="feedback__name"><span class="text-gradient">Ms. Phùng Thị Hải Hà</span></div>
+                                            <div class="feedback__pos">
+                                                <div>Marketing Manager</div>
+                                                <div class="fw-400">Viettel Post</div>
+                                            </div>
+                                            <div class="feedback__text">Cảm ơn VR Click Studio, các bạn đã có những phản hồi và triển khai công việc trong dự án với chúng tôi rất nhanh chóng và chuyên nghiệp, sự kiện của chúng tôi nhờ đó cũng đã thành công tốt đẹp. Sản phẩm của VR Plus cũng được chúng tôi sử dụng ở nhiều sự kiện khác nhau thành công.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__blur-line"></div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col"><a class="footer__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="footer__content" style="max-width: 320px;">
+                                <p>Tiên phong ứng dụng công nghệ thực tế ảo, công nghệ 360 trong chiến lược Marketing</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__heading">Liên hệ</div>
+                            <div class="footer__content">
+                                <p>Hotline: <a href="tel:(+84) 963.186.388">(+84) 963.186.388</a><br />Email: <a href="mailto:hello@vrplus.vn">hello@vrplus.vn</a><br />Trụ sở chính: Tầng 06, 93 Tô Hiệu, Q. Cầu Giấy, Hà Nội<br />Văn phòng HCM: 456 Phan Xích Long, Q. Phú Nhuận, TP. HCM</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__heading">Dịch vụ</div>
+                            <ul class="f-menu">
+                                <li><a href="#!">Tour 360 (không gian 360)</a></li>
+                                <li><a href="#!">Lập trình website tương tác</a></li>
+                                <li><a href="#!">Diễn họa 3D</a></li>
+                                <li><a href="#!">Chụp ảnh và video 360</a></li>
+                                <li><a href="#!">Phòng chiếu ảo 3D</a></li>
+                                <li><a href="#!">VR BOOTH thực tế ảo</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__heading">Đối tác</div>
+                            <div class="footer__content"><img src="./images/footer-partners.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="footer__end">
+                        <div class="footer__copyright">Copyright © 2020 VR Click Studio. All rights reserved.</div>
+                        <div class="f-social"><a class="f-social__item" href="#!"><i class="fab fa-fw fa-instagram"></i></a><a class="f-social__item" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a><a class="f-social__item" href="#!"><i class="fab fa-fw fa-twitter"></i></a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>
