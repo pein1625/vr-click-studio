@@ -359,3 +359,21 @@ $(function () {
 
   $(".js-post-content").find("table").addClass("table table-bordered table-hover mb-0").wrap('<div class="table-responsive"></div>');
 });
+
+$(function () {
+
+  const $window = $(window);
+
+  const $header = $('.header');
+
+  $window.on('scroll', function () {
+
+    if ($window.scrollTop() > 150) {
+
+      $header.addClass('is-fixed');
+    } else {
+
+      $header.removeClass('is-fixed');
+    }
+  });
+});
